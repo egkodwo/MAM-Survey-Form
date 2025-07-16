@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survery Form Project</title>
+        <meta charset="utf-8">
+        <meta name="description" content="A Survey form for Machine Automation and Maintenance Limited">
+        <meta name="author" content="Justice Morrison">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-design">
+                <h1 id="title">Machine Automation Ltd.</h1>
+                <img src="images/mam-logo.png" id="logo" alt="the logo of Machine Automation Ltd.">
+            </div>
+            <h2 id="second-title">Survey Form</h2>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form action="" method="post" id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Name <input type="text" name="name" id="name" required placeholder="Enter your name"></label>
+                <label id="email-label" for="email">Email <input type="email" name="email" id="email" required placeholder="Enter your email"></label>
+                <label id="number-label" for="number">Age (optional) <input type="number" name="number" id="number" required min="10" max="99" placeholder="Enter your age in years"></label>
+                <label for="dropdown">
+                    Which option best describes your current role?
+                    <select id="dropdown" name="dropdown">
+                        <option value="">Select a current role</option>
+                        <option value="manager">Manager</option>
+                        <option value="engineer">Engineer</option>
+                        <option value="technician">Technician</option>
+                        <option value="student">Student</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Would you recommend Machine Automation Ltd. to a friend?</legend>
+                <label><input type="radio" class="inline" name="recommendation" value="definetly" checked> Definitely</label>
+                <label><input type="radio" class="inline" name="recommendation" value="maybe"> Maybe</label>
+                <label><input type="radio" class="inline" name="recommendation" value="not-sure"> Not sure</label>  
+            </fieldset>
+            <fieldset>
+                <label>What one thing do you like about Machine Automation Ltd.? 
+                    <select id="favorite-fearure" name="favorite-fearure">
+                        <option value="">Select an option</option>
+                        <option value="products">Siemens Products</option>
+                        <option value="services">Industrial Services</option>
+                        <option value="philinanthropy">Giving back to society</option>
+                        <option value="payment">Terms of Payment Flexibility</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>What would you like to see improved? (Check all that apply)</legend>
+                <label><input type="checkbox" class="inline" name="improvement-suggestion" value="website"> MAM website</label>
+                <label><input type="checkbox" class="inline" name="improvement-suggestion" value="advertisement"> Media Advertisement</label>
+                <label><input type="checkbox" class="inline" name="improvement-suggestion" value="sitrain"> The Sitrain Program</label>
+                <label><input type="checkbox" class="inline" name="improvement-suggestion" value="product-delivery"> Delivery time of products</label>
+            </fieldset>
+            <label>Any comments or suggestions?
+                <textarea rows="3" cols="30" placeholder="Enter your comment here..." name="suggestions" id="suggestions"></textarea>
+            </label>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </body>
+</html>
